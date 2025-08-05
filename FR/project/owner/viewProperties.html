@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Properties</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: whitesmoke;
+    }
+
+    header {
+      background-color: rgb(201, 191, 103);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .top-bar h2 {
+      margin: 0;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      background-color: rgb(60, 60, 159);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: rgb(125, 139, 193);
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgb(157, 133, 90);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 5px 0;
+    }
+
+    .status {
+      font-weight: bold;
+      color: green;
+    }
+
+    .status.vacant {
+      color: red;
+    }
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(60, 60, 159);
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      background-color: rgb(125, 139, 193);
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Your Properties</h1></header>
+
+  <div class="container">
+    <div class="top-bar">
+      <h2>All Listed Properties</h2>
+      <a href="addproperty.html" class="btn">➕Add Property</a>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Greenview Apartment, #A1</h3>
+        <p>Rent: ₹12,000</p>
+        <p>Status: <span class="status">Occupied</span></p>
+      </div>
+
+      <div class="card">
+        <h3>Sunset Villa, #B2</h3>
+        <p>Rent: ₹18,500</p>
+        <p>Status: <span class="status vacant">Vacant</span></p>
+      </div>
+
+    </div>
+    <a href="ownerDashboard.html" class="back-btn">⬅️Back to Dashboard</a>
+  </div>
+</body>
+</html>

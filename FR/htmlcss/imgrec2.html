@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>imgrec</title>
+  <style>
+    body {
+      background-color:darkblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .margin {
+      background-color: blue; 
+      padding: 30px;
+      position: relative;
+    }
+
+    .border {
+      background-color: rgb(255, 136, 0); 
+      padding: 30px;
+    }
+
+    .padding {
+      background-color: rgb(21, 21, 123); 
+      padding: 30px;
+    }
+
+    .content {
+      background-color: rgb(0, 115, 255); 
+      padding: 75px;
+      width: 250px;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+    }
+    .label {
+      position: absolute;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .label-top { top: -20px; left: 45%;}
+    .label-bottom { bottom: -20px; left: 40%;}
+    .label-left { left: -50px; top: 50%;}
+    .label-right { right: -50px; top: 50%;}
+
+    .width-line {
+      position:absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-size: 16px;
+      color: rgb(0, 149, 255);
+    }
+    .height-line {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 2px;
+      writing-mode:vertical-rl;
+      text-align: center;
+      font-size: 16px;
+      color: rgb(0, 149, 255);
+    }
+    </style>
+</head>
+<body>
+  <div class="margin">
+    <b>MARGIN</b>
+    <div class="label label-top">TOP</div>
+    <div class="label label-bottom">BOTTOM</div>
+    <div class="label label-left">LEFT</div>
+    <div class="label label-right">RIGHT</div>
+
+    <div class="border">
+      <b>BORDER</b>
+      <div class="padding">
+        <b>PADDING</b>
+        <div class="content">
+          CONTENT
+          <div class="width-line" >WIDTH</div>
+          <div class="height-line">HEIGHT</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tenant Messages</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: whitesmoke;
+    }
+    header {
+      background-color: rgb(201, 191, 103);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      padding: 20px;
+    }
+    .message-box {
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+    .message-box h3 {
+      margin: 0 0 5px;
+    }
+    .message-box p {
+      margin: 5px 0;
+      color: #333;
+    }
+    .message-box .meta {
+      font-size: 12px;
+      color: gray;
+    }
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(60, 60, 159);
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      background-color: rgb(125, 139, 193);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Messages from Tenants</h1>
+  </header>
+  <div class="container">
+
+    <!-- Sample Message -->
+    <div class="message-box">
+      <h3>Subject: Plumbing Issue</h3>
+       <p>Hello, there's a water leak in the kitchen since last night. Please send someone to check it.</p> 
+      <p class="meta">From: ravi.kumar@email.com | Sent on: 27 July 2025</p>
+    </div>
+
+    <div class="message-box">
+      <h3>Subject: Request for rent extension</h3>
+       <p>Hi, I need a few extra days to make the rent payment for August. Please let me know if it's okay.</p> 
+      <p class="meta">From: anjali.mehta@email.com | Sent on: 26 July 2025</p>
+    </div>
+
+    <!-- You can dynamically generate more boxes like above from backend -->
+  </div>
+  <a href="ownerDashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+</body>
+</html>

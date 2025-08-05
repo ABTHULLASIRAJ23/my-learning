@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rent History - Landlord</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: whitesmoke;
+    }
+
+    header {
+      background-color: rgb(201, 191, 103);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 2px 6px rgb(157, 133, 90);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: rgb(240, 234, 190);
+    }
+
+    .status-paid {
+      color: green;
+      font-weight: bold;
+    }
+
+    .status-pending {
+      color: red;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(60, 60, 159);
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      background-color: rgb(125, 139, 193);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>All Tenants - Rent History</h1>
+  </header>
+
+  <div class="container">
+    <table>
+      
+        <tr>
+          <th>Tenant Name</th>
+          <th>Property</th>
+          <th>Month</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Date Paid</th>
+        </tr>
+      
+      
+        <tr>
+          <td>abu</td>
+          <td>Flat A-101</td>
+          <td>July 2025</td>
+          <td>₹8,000</td>
+          <td class="status-paid">Paid</td>
+          <td>01-07-2025</td>
+        </tr>
+        <tr>
+          <td>siraj</td>
+          <td>Flat B-202</td>
+          <td>August 2025</td>
+          <td>₹9,500</td>
+          <td class="status-pending">Pending</td>
+          <td>—</td>
+        </tr>
+        <!-- Add more rows here -->
+      
+    </table>
+
+    <a href="ownerDashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+  </div>
+</body>
+</html>

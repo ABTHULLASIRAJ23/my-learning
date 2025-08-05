@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rent History - Tenant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: whitesmoke;
+    }
+
+    header {
+      background-color: rgb(201, 191, 103);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 2px 6px rgb(157, 133, 90);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #acacac;
+    }
+
+    th {
+      background-color: rgb(229, 219, 143);
+    }
+
+    .status-paid {
+      color: green;
+      font-weight: bold;
+    }
+
+    .status-pending {
+      color: red;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(60, 60, 159);
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      background-color: rgb(125, 139, 193);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rent Payment History</h1>
+  </header>
+
+  <div class="container">
+    <table>
+      
+        <tr>
+          <th>Month</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Date Paid</th>
+        </tr>
+      
+      
+        <tr>
+          <td>July 2025</td>
+          <td>₹8,000</td>
+          <td class="status-paid">Paid</td>
+          <td>01-07-2025</td>
+        </tr>
+        <tr>
+          <td>August 2025</td>
+          <td>₹8,000</td>
+          <td class="status-pending">Pending</td>
+          <td>—</td>
+        </tr>
+        <!-- Add more rows dynamically later -->
+      
+    </table>
+
+    <a href="tenantDashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+  </div>
+</body>
+</html>

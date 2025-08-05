@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docobj</title>
+</head>
+<body>
+    <form onsubmit="return validate()">
+		<label>Name: </label>
+		<input type="text" name="name" id="name" placeholder="Enter name"><br><br>
+		<label>Date of birth: </label>
+		<input type="text" name="DOB" id="DOB" placeholder="dd/mm/yyyy"><br><br>
+		<label> Mobile Number: </label>
+        <input type="tel" name="number" id="number" placeholder="Enter phoneNumber"><br><br>
+        <label> Mail ID: </label>
+        <input type="email" name="mail" id="mail" placeholder="Enter mail id"><br><br>
+		<label>Gender: </label>
+		<label>Male</label>
+		<input type="radio" name="gender" value="Male">
+		<label>Female</label>
+		<input type="radio" name="gender" value="Female"><br><br>
+		<label>Experience: </label>
+		<input type="number" name="Experience" id="Experience"><br><br>
+		<label>Preffered Location: </label>
+		<label>Chennai</label>
+		<input type="radio" name="Location" value="Chennai">
+		<label>Banglore</label>
+		<input type="radio" name="Location" value="Banglore"><br><br>
+		<label>Upload Resume: </label>
+		<input type="file" name="Resume" placeholder="maximum upto 2mb"><
+        <input type="submit" value="submit">  
+</form>
+<script>
+      function Validate() {
+             name = document.getElementById("name").value;
+             dob = document.getElementById("DOB").value;
+             number = document.getElementById("number").value;
+             mail = document.getElementById("mail").value;
+             experience = document.getElementById("Experience").value;
+             resume = document.querySelector('input[type="file"]').value;
+             genderSelected = document.querySelector('input[name="gender"]:checked');
+             locationSelected = document.querySelector('input[name="Location"]:checked');
+
+            if (name == "" || dob == "" || number == "" || mail == "" || experience == "" || !resume || !genderSelected || !locationSelected) {
+                alert("Please fill all fields correctly.");
+                
+            }
+            alert("Form submitted successfully!");
+                        
+    }
+
+</script>
+</body>
+</html>

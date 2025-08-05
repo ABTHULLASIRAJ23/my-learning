@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Landlord</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: whitesmoke;
+      margin: 0;
+    }
+
+    header {
+      background-color: rgb(201, 191, 103);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: rgb(60, 60, 159);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: rgb(125, 139, 193);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact LandOwner</h1>
+  </header>
+
+  <div class="container">
+    <h2>Send a Message</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="tenantName">Your Name</label>
+        <input type="text" id="tenantName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="tenantEmail">Your Email</label>
+        <input type="email" id="tenantEmail" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <a href="tenantDashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+  </div>
+
+</body>
+</html>

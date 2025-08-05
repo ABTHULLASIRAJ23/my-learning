@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abthulla Siraj M | Portfolio</title>
+  <style>
+    :root {
+      --bg: #121212;
+      --text: #ffffff;
+      --accent: #4fc3f7;
+      --section-bg: #1e1e1e;
+    }
+    body.light-mode {
+      --bg: #ffffff;
+      --text: #121212;
+      --accent: #007acc;
+      --section-bg: #f0f0f0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      background: var(--section-bg);
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #000;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .contact a, .resume-link {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .resume-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent);
+      color: #fff;
+      border-radius: 5px;
+    }
+    footer {
+      background: var(--section-bg);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+    .theme-switch {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .theme-switch button {
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="theme-switch">
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Abthulla Siraj M</h1>
+    <p>Full Stack Developer | Java, Spring Boot, HTML, CSS, JavaScript, MySQL</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>B.E. Electronics and Communication Engineering student with a strong foundation in full stack development. Passionate about building efficient, real-world applications using modern technologies. Strong in problem-solving and teamwork.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Java, Python, HTML, CSS, JavaScript</li>
+      <li>Frameworks: Spring Boot, Bootstrap</li>
+      <li>Web Tech/APIs: JSP, Servlets, JDBC</li>
+      <li>Database: MySQL</li>
+      <li>Tools: Git, GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <h3>Rent/Lease Management System</h3>
+    <p>Developed a web platform for managing properties, rentals, and leases. Built with Java, Spring Boot, MySQL, HTML, CSS, and JavaScript. Includes dashboards, payment tracking (mock), and secure UI design.</p>
+
+    <h3>Portfolio Website (via Vibe Coding)</h3>
+    <p>This very website was built using AI-assisted coding techniques (vibe coding). Designed to showcase skills, projects, and resume with a clean, responsive dark theme.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>B.E.</strong> – Electronics and Communication Engineering<br/>Aalim Muhammed Salegh College of Engineering, Chennai (2021 – 2025)<br/>GPA: 7.5 / 10</p>
+    <p><strong>HSC</strong> – SDA Higher Secondary School, Puducherry (2020 – 2021)<br/>Percentage: 81%</p>
+    <p><strong>SSLC</strong> – SDA Higher Secondary School, Puducherry (2017 – 2018)<br/>Percentage: 77%</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sirajablu4548@gmail.com">sirajablu4548@gmail.com</a></p>
+    <p>Phone: +91 8870389692</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/abthulla-siraj" target="_blank">linkedin.com/in/abthulla-siraj</a></p>
+    <a class="resume-link" href="resume.pdf" download>Download Resume</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Abthulla Siraj M. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light-mode");
+    }
+  </script>
+</body>
+</html>

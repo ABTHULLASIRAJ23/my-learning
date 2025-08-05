@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> JavaScript </title>
+</head>
+<body>
+    <script type="text/javascript">
+         function warning1(){
+          alert("you should click a OK Button!")
+         }
+         
+         function warning2(){
+            confirm("you can accept or decline a alert!")
+         }
+         function warning3(){
+            a = prompt(" prompt message")
+            b = prompt(" prompt message")
+            total = a+b;
+            document.write(total);
+         }
+         function warning4(){  
+            open("http://www.amazon.com");  
+         }  
+         function warning5(){
+            setTimeout(   
+               function(){  
+               alert("Welcome to amazon after 2 seconds")  
+               },2000);  
+         }
+    </script>
+    <form style="text-align: center;">
+        <label>SUBMIT1:</label>
+        <input type="submit" name="alert" value="alert" onclick="warning1()"><br><br>
+        <label>SUBMIT2:</label>
+        <input type="submit" name="confirm" value="confirm" onclick="warning2()"><br><br>
+        <label>SUBMIT3:</label>
+        <input type="submit" name="prompt" value="prompt" onclick="warning3()"><br><br>
+        <label>VISIT Amazon:</label>
+        <input type="submit" name="open " value="open" onclick="warning4()"><br><br>
+        <label>delayed popup:</label>
+        <input type="submit" name="setTimeout" value="setTimeout" onclick="warning5()">
+        </form>
+</body>
+</html>

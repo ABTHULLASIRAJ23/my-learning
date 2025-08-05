@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Tenant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: whitesmoke;
+    }
+
+    header {
+      background-color: rgb(201, 191, 103);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgb(157, 133, 90);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: rgb(60, 60, 159);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: rgb(125, 139, 193);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Add New Tenant</h1>
+  </header>
+
+  <div class="container">
+    <h2>Tenant Details</h2>
+    <form id="addTenantForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="setPassword">Set Password For Tenant</label>
+      <input type="password" id="setPassword" name="setPassword" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="long" id="phone" name="phone" required>
+
+      <label for="unit">Flat Number</label>
+      <input type="string" id="unit" name="unit" required>
+
+      <label for="startDate">Lease Start Date</label>
+      <input type="date" id="startDate" name="startDate" required>
+
+      <label for="endDate">Lease End Date</label>
+      <input type="date" id="endDate" name="endDate" required>
+
+      <label for="rent">Monthly Rent (₹)</label>
+      <input type="int" id="rent" name="rent" required>
+
+      <button type="submit" class="btn">Add Tenant</button>
+    </form>
+  </div>
+
+</body>
+</html>
